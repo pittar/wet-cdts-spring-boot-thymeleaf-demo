@@ -10,6 +10,12 @@ The objective is to make a plain vanilla Spring Boot app that incorporates the T
 
 The code for the wet-cdts-spring-boot-thymeleaf-starter [can be found here](https://github.com/wet-boew/spring-boot-thymeleaf).  In order to use this starter in your application, you will need to clone that repository and run `mvn install`.
 
+## Running the Demo App
+
+Once you have cloned and installed `wet-cdts-spring-boot-thymeleaf-starter`, clone this repository and run `mvn install` on it.  If you are using Eclipse, you can right-click on `ApplicationConfig.java` and select `Run As -> Java Application`.
+
+One the app finishes starting, access the app at [http://localhost:8080/home](http://localhost:8080/home).
+
 ## Future Plans
 
 1. Publish the [wet-cdts-spring-boot-thymeleaf-starter](https://github.com/wet-boew/spring-boot-thymeleaf) to [Maven Central](http://search.maven.org/) so people won't have to compile the cod themselves.
