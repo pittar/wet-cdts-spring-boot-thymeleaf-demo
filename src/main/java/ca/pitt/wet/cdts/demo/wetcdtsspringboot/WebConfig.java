@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 
+import ca.canada.ised.wet.cdts.components.wet.interceptor.WETLocaleChangeInterceptor;
 import ca.canada.ised.wet.cdts.components.wet.interceptor.WETTemplateInterceptor;
 
 /**
@@ -19,28 +20,39 @@ import ca.canada.ised.wet.cdts.components.wet.interceptor.WETTemplateInterceptor
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-    /** The cdn template interceptor. */
-    @Autowired
-    private WETTemplateInterceptor cdnTemplateInterceptor;
-    
-    @Bean
-    public LocaleResolver localeResolver() {
-        CookieLocaleResolver slr = new CookieLocaleResolver();
-        slr.setDefaultLocale(Locale.CANADA);
-        return slr;
-    }
-    
-    @Bean
-    public LocaleChangeInterceptor localeChangeInterceptor() {
-        LocaleChangeInterceptor lci = new LocaleChangeInterceptor();
-        lci.setParamName("lang");
-        return lci;
-    }
-    
-    /** {@inheritDoc} */
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        super.addInterceptors(registry);
-        registry.addInterceptor(cdnTemplateInterceptor);
-    }
+	/** The WET CDTS template interceptor. */
+	@Autowired
+	private WETTemplateInterceptor cdnTemplateInterceptor;
+
+	/**
+	 * Locale resolver.
+	 * 
+	 * @return <code>LocaleResolver</code>
+	 */
+	@Bean
+	public LocaleResolver localeResolver() {
+		CookieLocaleResolver slr = new CookieLocaleResolver();
+		slr.setDefaultLocale(Locale.CANADA);
+		return slr;
+	}
+
+	/**
+	 * LocaleChangeInterceptor.
+	 * 
+	 * @return <code>LocaleChangeInterceptor</code>
+	 */
+	@Bean
+	public LocaleChangeInterceptor localeChangeInterceptor() {
+		WETLocaleChangeInterceptor lci = new WETLocaleChangeInterceptor();
+		lci.setParamName("lang");
+		return lci;
+	}
+
+	/** {@inheritDoc} */
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		super.addInterceptors(registry);
+		registry.addInterceptor(localeChangeInterceptor());
+		registry.addInterceptor(cdnTemplateInterceptor);
+	}
 }

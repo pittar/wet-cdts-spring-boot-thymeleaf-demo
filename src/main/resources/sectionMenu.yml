@@ -1,0 +1,26 @@
+--- 
+sectionMenuList: 
+  - 
+    menuLinks: 
+      - 
+        href: "http://www.google.com"
+        textEn: "Menu Item 1"
+        textFr: "Menu Item 1 FR"
+      - 
+        href: "http://www.yahoo.com"
+        textEn: "Menu Item 2"
+        textFr: "Menu Item 2 FR"
+    sectionNameEn: "Section 1"
+    sectionNameFr: "Section 1 FR"
+  - 
+    menuLinks: 
+      - 
+        href: "http://www.gmail.com"
+        textEn: "Menu Item 1"
+        textFr: "Menu Item 1 FR"
+      - 
+        href: "http://www.youtube.com"
+        textEn: "Menu Item 2"
+        textFr: "Menu Item 2 FR"
+    sectionNameEn: "Section 2"
+    sectionNameFr: "Section 2 FR"
