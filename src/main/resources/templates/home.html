@@ -14,16 +14,9 @@
 		<div>
 			<span data-th-text="#{some.text}">Hi</span>!  This screen, home.html, uses <b>layout:decorator="layouts/layout"</b>
 		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="form-group">
-					<form action="#" data-th-action="@{#{url.sideMenu}}" method="post">
-						<button class="btn btn-primary" name="sideMenuButton"
-							type="submit">See Side Menu Page</button>
-					</form>
-				</div>
-			</div>
-		</div>
+        <div>
+           Go to the <a href="#" data-th-href="@{#{url.sideMenu}}">Section Menu Demo</a>.
+        </div>
 	</div>
 </body>
 </html>
