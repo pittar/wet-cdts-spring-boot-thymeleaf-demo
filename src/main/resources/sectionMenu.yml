@@ -3,11 +3,11 @@ sectionMenuList:
   - 
     menuLinks: 
       - 
-        href: "http://www.google.com"
+        href: "/section1/item1.html"
         textEn: "Menu Item 1"
         textFr: "Menu Item 1 FR"
       - 
-        href: "http://www.yahoo.com"
+        href: "/section1/item2.html"
         textEn: "Menu Item 2"
         textFr: "Menu Item 2 FR"
     sectionNameEn: "Section 1"
@@ -15,12 +15,17 @@ sectionMenuList:
   - 
     menuLinks: 
       - 
-        href: "http://www.gmail.com"
-        textEn: "Menu Item 1"
-        textFr: "Menu Item 1 FR"
+        href: "/section2/itemA.html"
+        textEn: "Menu Item A"
+        textFr: "Menu Item A FR"
       - 
-        href: "http://www.youtube.com"
-        textEn: "Menu Item 2"
-        textFr: "Menu Item 2 FR"
+        href: "/section2/itemB.html"
+        textEn: "Menu Item B"
+        textFr: "Menu Item B FR"
+      - 
+        href: "https://www.google.ca"
+        textEn: "Google"
+        textFr: "Google"
+        newWindow: true
     sectionNameEn: "Section 2"
     sectionNameFr: "Section 2 FR"

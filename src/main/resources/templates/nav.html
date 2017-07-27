@@ -1,28 +1,19 @@
 
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorator="layouts/leftmenu-layout">
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layouts/leftmenu-layout">
 <head>
-<title>Page Title</title>
+  <title>Section Menu Page</title>
 </head>
 <body>
 	<div layout:fragment="content">
-		<div>This content will be included in the "content" div of the
-			template.</div>
+        <h1>Section Menu Page</h1>
+		<div>
+          This content will be included in the "content" div of the template.
+        </div>
 		<div>
 			Language: <span data-th-text="#{lang}">lang</span>
 		</div>
 		<div>
-			This screen, home.html, uses <b>layout:decorator="layouts/layout"</b>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="form-group">
-					<form action="#" data-th-action="@{#{url.sideMenu}}" method="post">
-						<button class="btn btn-primary" name="sideMenuButton"
-							type="submit">See Side Menu Page</button>
-					</form>
-				</div>
-			</div>
+			This screen, nav.html, uses <b>layout:decorator="layouts/leftmenu-layout"</b>
 		</div>
 	</div>
 </body>

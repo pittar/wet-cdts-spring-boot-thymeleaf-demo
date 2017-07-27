@@ -1,0 +1,19 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layouts/leftmenu-layout">
+  <head>
+    <title>Section Menu - Item 2</title>
+  </head>
+  <body>
+    <div layout:fragment="content">
+      <h1>Section 1 - Item 2</h1>
+      <div>
+        This content will be included in the "content" div of the template.
+      </div>
+      <div>
+        Language: <span data-th-text="#{lang}">lang</span>
+      </div>
+      <div>
+        This screen, nav.html, uses <b>layout:decorator="layouts/leftmenu-layout"</b>
+      </div>
+    </div>
+  </body>
+</html>
