@@ -1,8 +1,8 @@
 package ca.pitt.wet.cdts.demo.wetcdtsspringboot.controllers.section2;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -20,7 +20,7 @@ public class Section2Controller {
      *
      * @return <code>ModelAndView</code>
      */
-    @RequestMapping(path = "/itemA", method = RequestMethod.GET)
+    @GetMapping("/itemA")
     public ModelAndView getNav() {
         return new ModelAndView("section2/itemA");
     }
@@ -30,7 +30,7 @@ public class Section2Controller {
      *
      * @return <code>ModelAndView</code>
      */
-    @RequestMapping(path = "/itemB", method = RequestMethod.GET)
+    @GetMapping("/itemB")
     public ModelAndView postNav() {
         return new ModelAndView("section2/itemB");
     }
