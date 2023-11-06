@@ -1,5 +1,5 @@
 
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layouts/leftmenu-layout">
+<html xmlns:layout="http://www.thymeleaf.org" layout:decorate="~{layouts/leftmenu-layout}">
 <head>
   <title>Section Menu Page</title>
 </head>
@@ -13,7 +13,7 @@
 			Language: <span data-th-text="#{lang}">lang</span>
 		</div>
 		<div>
-			This screen, nav.html, uses <b>layout:decorator="layouts/leftmenu-layout"</b>
+			This screen, nav.html, uses <b>layout:decorate="layouts/leftmenu-layout"</b>
 		</div>
 	</div>
 </body>

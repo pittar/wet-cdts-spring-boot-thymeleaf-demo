@@ -3,11 +3,11 @@ sectionMenuList:
   - 
     menuLinks: 
       - 
-        href: "/section1/item1.html"
+        href: "/section1/item1"
         textEn: "Menu Item 1"
         textFr: "Menu Item 1 FR"
       - 
-        href: "/section1/item2.html"
+        href: "/section1/item2"
         textEn: "Menu Item 2"
         textFr: "Menu Item 2 FR"
     sectionNameEn: "Section 1"
@@ -15,11 +15,11 @@ sectionMenuList:
   - 
     menuLinks: 
       - 
-        href: "/section2/itemA.html"
+        href: "/section2/itemA"
         textEn: "Menu Item A"
         textFr: "Menu Item A FR"
       - 
-        href: "/section2/itemB.html"
+        href: "/section2/itemB"
         textEn: "Menu Item B"
         textFr: "Menu Item B FR"
       - 
