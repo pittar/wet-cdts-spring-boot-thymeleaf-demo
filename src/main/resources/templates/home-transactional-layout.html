@@ -1,0 +1,22 @@
+
+<html xmlns:layout="http://www.thymeleaf.org"
+	layout:decorate="~{layouts/transactional-layout.html}">
+<head>
+<title>Page Title</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div>This content will be included in the "content" div of the
+			template.</div>
+		<div>
+			Language: <span data-th-text="#{lang}">lang</span>
+		</div>
+		<div>
+			<span data-th-text="#{some.text}">Hi</span>!  This screen, home-transactional-layout.html, uses <b>layout:decorate="~{layouts/transactional-layout}"</b>
+		</div>
+        <div>
+           Go to the <a href="#" data-th-href="@{#{url.sideMenu}}">Section Menu Demo</a>.
+        </div>
+	</div>
+</body>
+</html>

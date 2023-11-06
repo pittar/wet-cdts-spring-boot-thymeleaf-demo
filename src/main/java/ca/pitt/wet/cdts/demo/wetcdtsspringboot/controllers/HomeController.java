@@ -7,20 +7,55 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Home Controller.
+ *
  * @author Andrew Pitt
  * @since 1.0.0
  */
 @Controller
-@RequestMapping(path="/home")
 public class HomeController {
 
-	/**
-	 * Get home.
-	 * @return <code>ModelAndView</code>
-	 */
-	@GetMapping
-	public ModelAndView getHome() {
-		return new ModelAndView("home");
-	}
-	
+    /**
+     * Get home.
+     *
+     * @return <code>ModelAndView</code>
+     */
+    @RequestMapping(path = {"/", "/home"})
+    @GetMapping()
+    public ModelAndView getHome() {
+        return new ModelAndView("home");
+    }
+
+    /**
+     * Get home.
+     *
+     * @return <code>ModelAndView</code>
+     */
+    @RequestMapping(path = "/home-application-layout")
+    @GetMapping()
+    public ModelAndView getHomeAplication() {
+        return new ModelAndView("home-application-layout");
+    }
+
+    /**
+     * Get home.
+     *
+     * @return <code>ModelAndView</code>
+     */
+    @RequestMapping(path = "/home-transactional-layout")
+    @GetMapping()
+    public ModelAndView getHomeTransactional() {
+        return new ModelAndView("home-transactional-layout");
+    }
+
+    /**
+     * Get home.
+     *
+     * @return <code>ModelAndView</code>
+     */
+    @RequestMapping(path = "/home-transactional-leftmenu-layout")
+    @GetMapping()
+    public ModelAndView getHomeTransactionalLeftMenu() {
+        return new ModelAndView("home-transactional-leftmenu-layout");
+    }
+
 }
