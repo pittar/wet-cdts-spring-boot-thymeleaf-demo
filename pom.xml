@@ -46,7 +46,7 @@
     <dependency>
       <groupId>ca.canada.ised.wet.cdts</groupId>
       <artifactId>wet-cdts-spring-boot3-thymeleaf-starter</artifactId>
-      <version>5.0.1-SNAPSHOT</version>
+      <version>5.0.2-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>nz.net.ultraq.thymeleaf</groupId>
