@@ -23,6 +23,11 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>17</java.version>
+
+    <!-- TOOD remove this override when spring boot uses 5.0.5 -->
+    <!-- https://github.com/spring-projects/spring-boot/issues/49277 -->
+    <!-- https://issues.apache.org/jira/browse/GROOVY-11745 -->
+    <groovy.version>5.0.3</groovy.version>
   </properties>
 
   <dependencies>
